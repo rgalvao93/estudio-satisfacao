@@ -18,10 +18,21 @@ WordPress (ou migrar para outra stack), usando este protótipo como referência 
 
 ## Estrutura
 
-- `index.html` — versão **redesenhada** (feita no Claude Designer), publicada como prévia.
-- `Estudio Satisfacao Site Final (offline).html` — arquivo original exportado do Claude Designer, autocontido.
+- `index.html` — versão **redesenhada**, em HTML/CSS puro e editável. Publicada como prévia.
+- `images/` — fotos e ícones usados por `index.html` (nomes descritivos, fáceis de trocar).
+- `fonts/` — arquivos de fonte (`.woff2`) usados por `index.html`.
+- `Estudio Satisfacao Site Final (offline).html` — arquivo original exportado do Claude Designer
+  (formato "bundle": imagens e fontes codificadas em base64, desempacotadas via JS no navegador).
+  Mantido só como referência — **não é o arquivo a editar**, pois não é hand-editável.
+- `index-bundled-original.html` — cópia do bundle acima, como estava publicado antes da limpeza.
 - `index-clone-original.html` — clone estático do site original (antes do redesign), mantido como referência.
 - `wp-content/` e `wp-includes/` — assets do clone original (`index-clone-original.html`).
+
+### Trocando imagens
+
+Basta substituir o arquivo correspondente em `images/` (mantendo o mesmo nome) ou editar o
+atributo `src`/`background-image` no `index.html` apontando para uma nova imagem (local ou uma
+URL de banco de imagens público, ex. Unsplash/Pexels).
 
 ## Rodando localmente
 
