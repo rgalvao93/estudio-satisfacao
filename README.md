@@ -18,9 +18,10 @@ WordPress (ou migrar para outra stack), usando este protótipo como referência 
 
 ## Estrutura
 
-- `index.html` — página principal (site de página única).
-- `wp-content/` — imagens, CSS e fontes usados pela página.
-- `wp-includes/` — scripts do WordPress core (jQuery etc.) usados no front-end.
+- `index.html` — versão **redesenhada** (feita no Claude Designer), publicada como prévia.
+- `Estudio Satisfacao Site Final (offline).html` — arquivo original exportado do Claude Designer, autocontido.
+- `index-clone-original.html` — clone estático do site original (antes do redesign), mantido como referência.
+- `wp-content/` e `wp-includes/` — assets do clone original (`index-clone-original.html`).
 
 ## Rodando localmente
 
