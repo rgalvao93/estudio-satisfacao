@@ -1,311 +1,261 @@
 <!DOCTYPE html>
-<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Estúdio Satisfação</title><link rel="stylesheet" href="styles.css">
-<style id="responsive-overrides">
-  html, body, #dc-root, #dc-root > .sc-host { height: auto !important; }
-  html, body { overflow-x: hidden; max-width: 100%; }
-  [data-dc-tpl="4"] { width: 100% !important; max-width: 1440px; }
-
-  @media (max-width: 860px) {
-    /* nav */
-    [data-dc-tpl="7"] { padding: 14px 20px !important; height: auto !important; flex-wrap: wrap; gap: 12px; }
-    [data-dc-tpl="9"] { gap: 16px !important; flex-wrap: wrap; justify-content: flex-end; }
-    [data-dc-tpl="8"] { width: 110px !important; }
-
-    /* hero */
-    [data-dc-tpl="5"] { min-height: auto !important; padding-bottom: 32px; }
-    [data-dc-tpl="14"] { padding: 32px 20px !important; }
-    [data-dc-tpl="18"] { font-size: 34px !important; max-width: 100% !important; }
-    [data-dc-tpl="21"] { flex-wrap: wrap; }
-    [data-dc-tpl="24"] { flex-wrap: wrap; gap: 16px 32px !important; }
-
-    /* avaliações */
-    [data-dc-tpl="28"] { flex-direction: column !important; align-items: flex-start !important; padding: 36px 20px !important; gap: 24px !important; }
-    [data-dc-tpl="34"] { flex-direction: column !important; width: 100%; }
-
-    /* experiência */
-    [data-dc-tpl="40"] { flex-direction: column !important; padding: 48px 20px !important; gap: 28px !important; }
-    [data-dc-tpl="41"] { width: 100% !important; }
-    [data-dc-tpl="42"] { width: 100% !important; }
-    [data-dc-tpl="46"] { flex-direction: column !important; }
-
-    /* serviços */
-    [data-dc-tpl="59"] { padding: 48px 20px !important; }
-    [data-dc-tpl="65"] { width: 100% !important; }
-
-    /* unidades */
-    [data-dc-tpl="70"] { padding: 48px 20px !important; }
-    [data-dc-tpl="74"] { flex-direction: column !important; }
-
-    /* footer */
-    [data-dc-tpl="96"] { padding: 40px 20px 100px !important; gap: 28px !important; }
-    [data-dc-tpl="97"] { max-width: 100% !important; }
-
-    /* barra fixa inferior */
-    [data-dc-tpl="112"] { padding: 12px 16px !important; gap: 10px; }
-    [data-dc-tpl="113"] { font-size: 12px !important; }
-  }
-
-  @media (max-width: 480px) {
-    [data-dc-tpl="18"] { font-size: 28px !important; }
-    [data-dc-tpl="24"] { gap: 10px 24px !important; }
-    [data-dc-tpl="25"], [data-dc-tpl="26"], [data-dc-tpl="27"] { font-size: 12px !important; }
-  }
-</style>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Estúdio Satisfação — Barbearia & SPA Masculino</title>
+<meta name="description" content="Barbearia focada na experiência e na qualidade do corte. SPA masculino em Barueri e Carapicuíba. 4,9★ · 168 avaliações no Google.">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div id="dc-root"><div class="sc-host" data-sc-name="index"><div data-dc-tpl="4" style="width: 1440px; background: rgb(255, 255, 255); font-family: &quot;Fira Sans&quot;, sans-serif; position: relative;">
+<div class="page">
 
-  
-  <div data-dc-tpl="5" style="position: relative; min-height: 820px; background: url(&quot;images/foto-hero-barbeiro.jpg&quot;) center center / cover no-repeat rgb(0, 0, 0); display: flex; flex-direction: column;">
-    <div data-dc-tpl="6" style="position: absolute; inset: 0px; background: linear-gradient(rgba(0, 0, 0, 0.58) 0%, rgba(0, 0, 0, 0.12) 35%, rgba(0, 0, 0, 0.42) 100%);"></div>
+  <!-- Nav -->
+  <nav class="site-nav" aria-label="Principal">
+    <a href="index.html" aria-label="Estúdio Satisfação — início">
+      <img class="nav-logo" src="images/logo-satisfacao.webp" alt="Estúdio Satisfação">
+    </a>
+    <div class="nav-links">
+      <a class="nav-link" href="servicos.html">Serviços</a>
+      <a class="nav-link" href="#avaliacoes">Avaliações</a>
+      <a class="nav-link" href="#unidades">Unidades</a>
+      <a class="btn btn-gold btn-sm" href="#unidades">Agendar</a>
+    </div>
+  </nav>
 
-    
-    <div data-dc-tpl="7" class="site-nav" style="position: relative; display: flex; align-items: center; justify-content: space-between; padding: 0px 60px; height: 100px; border-bottom: 1px solid rgba(255, 255, 255, 0.22); transition: background 0.3s ease, box-shadow 0.3s ease;">
-      <img data-dc-tpl="8" src="images/logo-satisfacao.webp" alt="Estúdio Satisfação — barbearia" style="width: 140px; height: auto; display: block;">
-      <div data-dc-tpl="9" style="display: flex; align-items: center; gap: 34px;">
-        <a data-dc-tpl="10" href="servicos.html" class="nav-link" style="color: rgb(255, 255, 255); font: 400 14px &quot;Fira Sans&quot;, sans-serif;">Serviços</a>
-        <a data-dc-tpl="11" href="#avaliacoes" class="nav-link" style="color: rgb(255, 255, 255); font: 400 14px &quot;Fira Sans&quot;, sans-serif;">Avaliações</a>
-        <a data-dc-tpl="12" href="#unidades" class="nav-link" style="color: rgb(255, 255, 255); font: 400 14px &quot;Fira Sans&quot;, sans-serif;">Unidades</a>
-        <a data-dc-tpl="13" href="#unidades" style="padding: 15px 32px; background: rgb(255, 255, 255); color: rgb(0, 0, 0); border-radius: 48px; font: 600 13px &quot;Fira Sans&quot;, sans-serif;">AGENDAR</a>
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero-copy">
+      <span class="eyebrow">Carapicuíba &amp; Barueri</span>
+      <h1>O corte é técnica.<br>A <span class="accent">Satisfação</span> é o acabamento.</h1>
+      <p class="hero-lead">Barbearia e SPA masculino: cabelo, barba e cuidado num ambiente sóbrio e privativo — onde o tempo para e cada detalhe é pensado para você sair melhor do que entrou.</p>
+      <div class="hero-cta">
+        <a class="btn btn-gold" href="#unidades">Agendar agora →</a>
+        <a class="btn btn-ghost-dk" href="servicos.html">Ver o menu</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><b>+1000</b><span>clientes satisfeitos</span></div>
+        <div class="hero-stat"><b>+7 anos</b><span>de história</span></div>
+        <div class="hero-stat"><b>+20</b><span>profissionais</span></div>
       </div>
     </div>
-
-    
-    <div data-dc-tpl="14" style="position: relative; flex: 1 1 0%; display: flex; flex-direction: column; justify-content: center; padding: 0px 60px; gap: 26px;">
-      <div data-dc-tpl="15" style="display: inline-flex; align-items: center; gap: 10px; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.28); padding: 8px 16px; border-radius: 30px; width: fit-content;">
-        <span data-dc-tpl="16" style="color: rgb(242, 180, 0); font-size: 14px; letter-spacing: 2px;">★★★★★</span>
-        <span data-dc-tpl="17" style="color: rgb(255, 255, 255); font: 500 13px &quot;Fira Sans&quot;, sans-serif;">4,9 · 168 avaliações no Google</span>
-      </div>
-      <h1 data-dc-tpl="18" style="font-family: &quot;Cinzel Decorative&quot;, serif; font-weight: 400; font-size: 52px; color: rgb(255, 255, 255); text-shadow: rgba(0, 0, 0, 0.71) 0px 0px 5px; max-width: 640px; margin: 0px; line-height: 1.24;">Barbearia focada na <b data-dc-tpl="19">experiência</b> e na <b data-dc-tpl="20">qualidade</b> do corte</h1>
-      <div data-dc-tpl="21" style="display: flex; gap: 14px;">
-        <a data-dc-tpl="22" href="#unidades" class="btn-cta" style="padding: 20px 38px; background: rgb(255, 255, 255); color: rgb(0, 0, 0); border-radius: 48px; font: 600 14px &quot;Fira Sans&quot;, sans-serif;">Agendar agora →</a>
-        <a data-dc-tpl="23" href="servicos.html" class="btn-outline" style="padding: 20px 38px; background: transparent; color: rgb(255, 255, 255); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 48px; font: 500 14px &quot;Fira Sans&quot;, sans-serif;">Ver serviços</a>
-      </div>
-      <div data-dc-tpl="24" style="display: flex; gap: 44px; border-top: 1px solid rgba(255, 255, 255, 0.28); padding-top: 22px; margin-top: 14px;">
-        <p data-dc-tpl="25" style="margin: 0px; font-family: &quot;Fira Sans&quot;, sans-serif; font-weight: 500; font-size: 14px; color: rgb(255, 255, 255);">+1000 clientes satisfeitos</p>
-        <p data-dc-tpl="26" style="margin: 0px; font-family: &quot;Fira Sans&quot;, sans-serif; font-weight: 500; font-size: 14px; color: rgb(255, 255, 255);">+7 anos de história</p>
-        <p data-dc-tpl="27" style="margin: 0px; font-family: &quot;Fira Sans&quot;, sans-serif; font-weight: 500; font-size: 14px; color: rgb(255, 255, 255);">+20 profissionais</p>
+    <div class="hero-media">
+      <img src="images/estudio-hero.png" alt="Cliente na cadeira do Estúdio Satisfação" style="object-position: 30% 30%;">
+      <div class="hero-seal">
+        <span class="stars">★★★★★</span>
+        <span class="score">4,9</span>
+        <span class="lbl">168 avaliações · Google</span>
       </div>
     </div>
-  </div>
+  </header>
 
-  
-  <div data-dc-tpl="28" id="avaliacoes" style="background: rgb(13, 13, 13); padding: 52px 60px; display: flex; align-items: center; gap: 52px;">
-    <div data-dc-tpl="29" style="display: flex; flex-direction: column; gap: 8px; min-width: 210px;">
-      <span data-dc-tpl="30" style="font-family: &quot;Fira Sans&quot;, sans-serif; font-weight: 600; font-size: 36px; color: rgb(255, 255, 255); line-height: 1;">4,9<span data-dc-tpl="31" style="font-size: 17px; color: rgb(138, 138, 138);"> / 5</span></span>
-      <span data-dc-tpl="32" style="color: rgb(242, 180, 0); font-size: 18px; letter-spacing: 2px;">★★★★★</span>
-      <span data-dc-tpl="33" style="font-family: &quot;Fira Sans&quot;, sans-serif; font-size: 13px; color: rgb(182, 182, 182);">168 avaliações no Google · EXCELENTE</span>
+  <!-- Avaliações -->
+  <section class="reviews" id="avaliacoes" aria-label="Avaliações de clientes">
+    <div class="reviews-score">
+      <span class="big">4,9<small> / 5</small></span>
+      <span class="stars">★★★★★</span>
+      <span class="meta">168 avaliações no Google · Excelente</span>
     </div>
-    <div data-dc-tpl="34" style="display: flex; gap: 16px; flex: 1 1 0%;">
-      
-        <div data-dc-tpl="36" class="reveal" style="flex: 1 1 0%; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 10px;">
-          <span data-dc-tpl="37" style="color: rgb(242, 180, 0); font-size: 13px; letter-spacing: 2px;">★★★★★</span>
-          <p data-dc-tpl="38" style="margin: 0px; font-family: &quot;Fira Sans&quot;, sans-serif; font-size: 13px; line-height: 20px; color: rgb(224, 224, 224);"><span class="sc-interp">Atendimento atencioso mesmo com crianças pequenas — equipe paciente e cuidadosa do início ao fim.</span></p>
-          <span data-dc-tpl="39" style="font-family: &quot;Fira Sans&quot;, sans-serif; font-size: 11px; color: rgb(138, 138, 138);"><span class="sc-interp">Cliente Google</span></span>
-        </div>
-      
-        <div data-dc-tpl="36" class="reveal" style="flex: 1 1 0%; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 10px;">
-          <span data-dc-tpl="37" style="color: rgb(242, 180, 0); font-size: 13px; letter-spacing: 2px;">★★★★★</span>
-          <p data-dc-tpl="38" style="margin: 0px; font-family: &quot;Fira Sans&quot;, sans-serif; font-size: 13px; line-height: 20px; color: rgb(224, 224, 224);"><span class="sc-interp">Ambiente sofisticado e resultado impecável. Virou meu lugar fixo para cuidar da barba.</span></p>
-          <span data-dc-tpl="39" style="font-family: &quot;Fira Sans&quot;, sans-serif; font-size: 11px; color: rgb(138, 138, 138);"><span class="sc-interp">Cliente Google</span></span>
-        </div>
-      
-        <div data-dc-tpl="36" class="reveal" style="flex: 1 1 0%; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 10px;">
-          <span data-dc-tpl="37" style="color: rgb(242, 180, 0); font-size: 13px; letter-spacing: 2px;">★★★★★</span>
-          <p data-dc-tpl="38" style="margin: 0px; font-family: &quot;Fira Sans&quot;, sans-serif; font-size: 13px; line-height: 20px; color: rgb(224, 224, 224);"><span class="sc-interp">Profissionais atenciosos, pontualidade e um corte sempre no capricho.</span></p>
-          <span data-dc-tpl="39" style="font-family: &quot;Fira Sans&quot;, sans-serif; font-size: 11px; color: rgb(138, 138, 138);"><span class="sc-interp">Cliente Google</span></span>
-        </div>
-      
+    <div class="reviews-grid reveal-stagger reveal">
+      <figure class="review-card">
+        <span class="stars">★★★★★</span>
+        <p>Sabe aquele lugar em que você se sente em casa? É assim que o Arthur se sente quando chega aqui. Todos os meninos muito atenciosos e especialistas no que fazem, com muito amor e cuidado no tratamento com os pequenos.</p>
+        <cite>Paloma Cordeiro · Google</cite>
+      </figure>
+      <figure class="review-card">
+        <span class="stars">★★★★★</span>
+        <p>Ambiente top com ótimos profissionais, indico e voltarei mais vezes. Sou de Osasco e faço questão de atravessar a cidade. Parabéns à equipe e proprietários.</p>
+        <cite>Pedro Henrique · Google</cite>
+      </figure>
+      <figure class="review-card">
+        <span class="stars">★★★★★</span>
+        <p>Atencioso, rápido e dedicado! Melhor de Carapicuíba.</p>
+        <cite>Leo Costa · Google</cite>
+      </figure>
     </div>
-  </div>
+  </section>
 
-  
-  <div data-dc-tpl="40" style="display: flex; gap: 56px; padding: 100px 120px; background: rgb(255, 255, 255); align-items: center;">
-    <img data-dc-tpl="41" src="images/foto-retrato-terno.jpg" alt="Interior do Estúdio Satisfação" class="reveal" style="width: 42%; display: block;">
-    <div data-dc-tpl="42" class="reveal" style="width: 58%; display: flex; flex-direction: column; gap: 16px;">
-      <h2 data-dc-tpl="43" style="margin: 0px; font-family: &quot;Cinzel Decorative&quot;, serif; font-weight: 500; font-size: 42px; color: rgb(29, 29, 29);">experiência</h2>
-      <p data-dc-tpl="44" style="margin: 0px 0px 8px; font-family: &quot;Fira Sans&quot;, sans-serif; font-weight: 300; font-size: 20px; text-transform: uppercase; color: rgb(99, 99, 99);">ambiente pensado para o seu relaxamento</p>
-      <p data-dc-tpl="45" style="margin: 0px; max-width: 560px; font-family: &quot;Fira Sans&quot;, sans-serif; font-size: 16px; line-height: 26px; color: rgb(99, 99, 99);">O Estúdio Satisfação foi projetado para ser a extensão do seu escritório ou da sua casa. Um ambiente sóbrio, privativo e sofisticado, onde o tempo para — o serviço de barbearia se funde a uma experiência de SPA masculino.</p>
-      <div data-dc-tpl="46" style="display: flex; gap: 24px; margin-top: 16px;">
-        <div data-dc-tpl="47" style="flex: 1 1 0%; display: flex; flex-direction: column; gap: 10px; padding: 22px; border: 1px solid rgb(236, 236, 236); border-radius: 16px; background: rgb(252, 251, 249);">
-          <img data-dc-tpl="48" src="images/icone-modernidade.svg" alt="" style="height: 32px; width: auto;">
-          <h3 data-dc-tpl="49" style="margin: 8px 0px 0px; font-family: &quot;Fira Sans&quot;, sans-serif; font-weight: 500; font-size: 16px; color: rgb(0, 0, 0);">MODERNIDADE</h3>
-          <p data-dc-tpl="50" style="margin: 0px; font-family: &quot;Fira Sans&quot;, sans-serif; font-weight: 300; font-size: 13px; color: rgb(99, 99, 99); line-height: 18px;">Técnicas de vanguarda e equipamentos premium</p>
+  <!-- Experiência -->
+  <section class="experience on-light" aria-label="A experiência">
+    <div class="experience-photo reveal">
+      <img src="images/estudio-retrato.webp" alt="Cliente do Estúdio Satisfação">
+    </div>
+    <div class="experience-copy reveal">
+      <span class="eyebrow">A experiência</span>
+      <h2 class="section-title">Um ambiente feito para o tempo parar</h2>
+      <p class="lead">O Estúdio Satisfação é a extensão do seu escritório ou da sua casa: sóbrio, privativo e sofisticado.</p>
+      <p class="body">A barbearia se funde a uma experiência de SPA masculino — do corte à toalha quente, cada etapa é pensada para o seu bem-estar.</p>
+      <div class="pillars">
+        <div class="pillar">
+          <img src="images/icone-modernidade.svg" alt="">
+          <h3>Modernidade</h3>
+          <p>Técnicas de vanguarda e equipamentos premium.</p>
         </div>
-        <div data-dc-tpl="51" style="flex: 1 1 0%; display: flex; flex-direction: column; gap: 10px; padding: 22px; border: 1px solid rgb(236, 236, 236); border-radius: 16px; background: rgb(252, 251, 249);">
-          <img data-dc-tpl="52" src="images/icone-exclusividade.svg" alt="" style="height: 32px; width: auto;">
-          <h3 data-dc-tpl="53" style="margin: 8px 0px 0px; font-family: &quot;Fira Sans&quot;, sans-serif; font-weight: 500; font-size: 16px; color: rgb(0, 0, 0);">EXCLUSIVIDADE</h3>
-          <p data-dc-tpl="54" style="margin: 0px; font-family: &quot;Fira Sans&quot;, sans-serif; font-weight: 300; font-size: 13px; color: rgb(99, 99, 99); line-height: 18px;">Atendimento personalizado em ambiente reservado</p>
+        <div class="pillar">
+          <img src="images/icone-exclusividade.svg" alt="">
+          <h3>Exclusividade</h3>
+          <p>Atendimento personalizado em ambiente reservado.</p>
         </div>
-        <div data-dc-tpl="55" style="flex: 1 1 0%; display: flex; flex-direction: column; gap: 10px; padding: 22px; border: 1px solid rgb(236, 236, 236); border-radius: 16px; background: rgb(252, 251, 249);">
-          <img data-dc-tpl="56" src="images/icone-conforto.svg" alt="" style="height: 32px; width: auto;">
-          <h3 data-dc-tpl="57" style="margin: 8px 0px 0px; font-family: &quot;Fira Sans&quot;, sans-serif; font-weight: 500; font-size: 16px; color: rgb(0, 0, 0);">CONFORTO</h3>
-          <p data-dc-tpl="58" style="margin: 0px; font-family: &quot;Fira Sans&quot;, sans-serif; font-weight: 300; font-size: 13px; color: rgb(99, 99, 99); line-height: 18px;">Lounge descontraído e bem-estar absoluto</p>
+        <div class="pillar">
+          <img src="images/icone-conforto.svg" alt="">
+          <h3>Conforto</h3>
+          <p>Lounge descontraído e bem-estar absoluto.</p>
         </div>
       </div>
     </div>
+  </section>
+
+  <!-- O Menu do Estúdio (assinatura) -->
+  <section class="menu-section on-dark" id="servicos" aria-label="Nossos serviços">
+    <div class="section-head reveal">
+      <span class="eyebrow">O menu do estúdio</span>
+      <h2 class="section-title">Do corte ao relaxamento</h2>
+    </div>
+    <div class="menu">
+      <div class="menu-list" id="menuList">
+        <a class="menu-row" href="servicos.html#cabelo-barba-bigode" data-photo="images/estudio-barba.webp">
+          <span class="num">01</span>
+          <span class="name">Cabelo, Barba e Bigode</span>
+          <span class="go">Agendar →</span>
+        </a>
+        <a class="menu-row" href="servicos.html#sobrancelha" data-photo="images/servico-sobrancelha.jpg">
+          <span class="num">02</span>
+          <span class="name">Sobrancelha</span>
+          <span class="go">Agendar →</span>
+        </a>
+        <a class="menu-row" href="servicos.html#quimica" data-photo="images/servico-quimica.jpg">
+          <span class="num">03</span>
+          <span class="name">Química</span>
+          <span class="go">Agendar →</span>
+        </a>
+        <a class="menu-row" href="servicos.html#tatuagem" data-photo="images/servico-tatuagem.jpg">
+          <span class="num">04</span>
+          <span class="name">Tatuagem</span>
+          <span class="go">Agendar →</span>
+        </a>
+        <a class="menu-row" href="servicos.html#depilacao-masculina" data-photo="images/servico-depilacao-masculina.jpg">
+          <span class="num">05</span>
+          <span class="name">Depilação Masculina</span>
+          <span class="go">Agendar →</span>
+        </a>
+        <a class="menu-row" href="servicos.html#day-spa" data-photo="images/servico-day-spa.jpg">
+          <span class="num">06</span>
+          <span class="name">Day Spa</span>
+          <span class="go">Agendar →</span>
+        </a>
+      </div>
+      <div class="menu-viewer" id="menuViewer" aria-hidden="true">
+        <img src="images/estudio-barba.webp" alt="" class="is-active" data-key="images/estudio-barba.webp">
+        <img src="images/servico-sobrancelha.jpg" alt="" data-key="images/servico-sobrancelha.jpg">
+        <img src="images/servico-quimica.jpg" alt="" data-key="images/servico-quimica.jpg">
+        <img src="images/servico-tatuagem.jpg" alt="" data-key="images/servico-tatuagem.jpg">
+        <img src="images/servico-depilacao-masculina.jpg" alt="" data-key="images/servico-depilacao-masculina.jpg">
+        <img src="images/servico-day-spa.jpg" alt="" data-key="images/servico-day-spa.jpg">
+      </div>
+    </div>
+  </section>
+
+  <!-- Unidades -->
+  <section class="units on-light" id="unidades" aria-label="Nossas unidades">
+    <div class="section-head reveal">
+      <span class="eyebrow">Nossas unidades</span>
+      <h2 class="section-title">Escolha a mais perto de você</h2>
+    </div>
+    <div class="units-grid">
+
+      <article class="unit-card reveal">
+        <iframe class="unit-map" title="Mapa da unidade Barueri" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Est%C3%BAdio+Satisfa%C3%A7%C3%A3o+Barueri&output=embed"></iframe>
+        <div class="unit-body">
+          <h3>Barueri</h3>
+          <p class="unit-line">
+            <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+            Barueri, SP
+          </p>
+          <p class="unit-line">
+            <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M6.6 10.8a15.9 15.9 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+            (11) 97802-5929
+          </p>
+          <p class="unit-line">
+            <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 10.4-3.3 1.9-.8-1.3 2.6-1.5V6h1.5v6.4z"/></svg>
+            Seg a Sáb · 9h às 20h — Feriado · 9h às 13h
+          </p>
+          <div class="unit-actions">
+            <a class="btn btn-dark" href="https://www.trinks.com/estudio-satisfacao-barueri-/framebusca" target="_blank" rel="noopener">Agendar online →</a>
+            <div class="row">
+              <a class="btn btn-wa btn-sm" href="https://wa.me/5511978025929?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20unidade%20Barueri." target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.15-1.7-.84-2-.93-.26-.1-.46-.15-.65.14-.2.3-.75.94-.92 1.13-.17.2-.34.22-.63.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.45.13-.6.13-.13.3-.34.44-.5.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.65-1.56-.9-2.14-.23-.56-.47-.48-.65-.49h-.55c-.2 0-.5.07-.77.36-.26.3-1 .98-1 2.4 0 1.4 1.03 2.76 1.17 2.95.15.2 2.02 3.08 4.9 4.32.68.3 1.22.47 1.63.6.69.22 1.31.19 1.8.11.55-.08 1.7-.69 1.93-1.36.24-.67.24-1.24.17-1.36-.07-.12-.26-.19-.55-.34z"/></svg>
+                WhatsApp
+              </a>
+              <a class="btn btn-ghost-lt btn-sm" href="https://www.google.com/maps/search/Est%C3%BAdio+Satisfa%C3%A7%C3%A3o+Barueri" target="_blank" rel="noopener">Como chegar</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="unit-card reveal">
+        <iframe class="unit-map" title="Mapa da unidade Carapicuíba" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Est%C3%BAdio+Satisfa%C3%A7%C3%A3o+Carapicu%C3%ADba&output=embed"></iframe>
+        <div class="unit-body">
+          <h3>Carapicuíba</h3>
+          <p class="unit-line">
+            <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+            Carapicuíba, SP
+          </p>
+          <p class="unit-line">
+            <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M6.6 10.8a15.9 15.9 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+            (11) 4374-1558
+          </p>
+          <p class="unit-line">
+            <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 10.4-3.3 1.9-.8-1.3 2.6-1.5V6h1.5v6.4z"/></svg>
+            Seg a Sáb · 9h às 20h — Feriado · 9h às 13h
+          </p>
+          <div class="unit-actions">
+            <a class="btn btn-dark" href="https://www.trinks.com/estudiosatisfacao/framebusca" target="_blank" rel="noopener">Agendar online →</a>
+            <div class="row">
+              <a class="btn btn-wa btn-sm" href="https://wa.me/551143741558?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20unidade%20Carapicu%C3%ADba." target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.15-1.7-.84-2-.93-.26-.1-.46-.15-.65.14-.2.3-.75.94-.92 1.13-.17.2-.34.22-.63.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.45.13-.6.13-.13.3-.34.44-.5.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.65-1.56-.9-2.14-.23-.56-.47-.48-.65-.49h-.55c-.2 0-.5.07-.77.36-.26.3-1 .98-1 2.4 0 1.4 1.03 2.76 1.17 2.95.15.2 2.02 3.08 4.9 4.32.68.3 1.22.47 1.63.6.69.22 1.31.19 1.8.11.55-.08 1.7-.69 1.93-1.36.24-.67.24-1.24.17-1.36-.07-.12-.26-.19-.55-.34z"/></svg>
+                WhatsApp
+              </a>
+              <a class="btn btn-ghost-lt btn-sm" href="https://www.google.com/maps/search/Est%C3%BAdio+Satisfa%C3%A7%C3%A3o+Carapicu%C3%ADba" target="_blank" rel="noopener">Como chegar</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <img src="images/logo-satisfacao.webp" alt="Estúdio Satisfação">
+      <p>Barbearia focada na experiência e na qualidade do corte. SPA masculino em Barueri e Carapicuíba.</p>
+    </div>
+    <div class="footer-col">
+      <span class="head">Unidades</span>
+      <a href="https://wa.me/5511978025929?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20unidade%20Barueri.">Barueri · (11) 97802-5929</a>
+      <a href="https://wa.me/551143741558?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20unidade%20Carapicu%C3%ADba.">Carapicuíba · (11) 4374-1558</a>
+    </div>
+    <div class="footer-col">
+      <span class="head">Horário</span>
+      <span>Seg a Sáb · 9h às 20h</span>
+      <span>Feriado · 9h às 13h</span>
+    </div>
+    <div class="footer-col">
+      <span class="head">Redes</span>
+      <a href="https://www.instagram.com/estudiosatisfacao" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://wa.me/5511978025929?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20unidade%20Barueri.">WhatsApp</a>
+    </div>
+  </footer>
+
+  <!-- Barra CTA sticky -->
+  <div class="cta-bar">
+    <span><b>4,9 ★</b> · 168 avaliações — pronto para agendar?</span>
+    <a class="btn btn-gold btn-sm" href="#unidades">Escolher unidade →</a>
   </div>
 
-  
-  <div data-dc-tpl="59" id="servicos" style="background: url(&quot;images/foto-interior-barbearia.webp&quot;) left top / cover no-repeat rgb(0, 0, 0); padding: 90px 120px;">
-    <div data-dc-tpl="60" class="reveal" style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 40px;">
-      <h2 data-dc-tpl="61" style="margin: 0px; font-family: &quot;Cinzel Decorative&quot;, serif; font-weight: 500; font-size: 42px; color: rgb(255, 255, 255);">nossos serviços</h2>
-      <p data-dc-tpl="62" style="margin: 0px; font-family: &quot;Fira Sans&quot;, sans-serif; font-weight: 300; font-size: 18px; text-transform: uppercase; color: rgb(213, 213, 213);">O que podemos fazer por você</p>
-    </div>
-    <div data-dc-tpl="63" style="display: flex; flex-wrap: wrap; gap: 16px;">
-      
-        <div data-dc-tpl="65" class="svc-card reveal" style="width: calc(33.33% - 11px); min-height: 150px; background: url(&quot;images/servico-cabelo-barba-bigode.jpg&quot;) center center / cover no-repeat rgb(51, 51, 51); position: relative; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; padding: 20px;">
-          <div data-dc-tpl="66" style="position: absolute; inset: 0px; background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.66));"></div>
-          <div data-dc-tpl="67" style="position: relative; display: flex; flex-direction: column; gap: 4px;">
-            <h3 data-dc-tpl="68" style="margin: 0px; font-family: &quot;Fira Sans&quot;, sans-serif; font-weight: 400; font-size: 18px; text-transform: capitalize; color: rgb(255, 255, 255);"><span class="sc-interp">cabelo, barba e bigode</span></h3>
-            <a data-dc-tpl="69" href="#unidades" style="font-family: &quot;Fira Sans&quot;, sans-serif; font-weight: 500; font-size: 12px; color: #C7A662;">Agendar →</a>
-          </div>
-        </div>
-      
-        <div data-dc-tpl="65" class="svc-card reveal" style="width: calc(33.33% - 11px); min-height: 150px; background: url(&quot;images/servico-sobrancelha.jpg&quot;) center center / cover no-repeat rgb(51, 51, 51); position: relative; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; padding: 20px;">
-          <div data-dc-tpl="66" style="position: absolute; inset: 0px; background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.66));"></div>
-          <div data-dc-tpl="67" style="position: relative; display: flex; flex-direction: column; gap: 4px;">
-            <h3 data-dc-tpl="68" style="margin: 0px; font-family: &quot;Fira Sans&quot;, sans-serif; font-weight: 400; font-size: 18px; text-transform: capitalize; color: rgb(255, 255, 255);"><span class="sc-interp">sobrancelha</span></h3>
-            <a data-dc-tpl="69" href="#unidades" style="font-family: &quot;Fira Sans&quot;, sans-serif; font-weight: 500; font-size: 12px; color: #C7A662;">Agendar →</a>
-          </div>
-        </div>
-      
-        <div data-dc-tpl="65" class="svc-card reveal" style="width: calc(33.33% - 11px); min-height: 150px; background: url(&quot;images/servico-quimica.jpg&quot;) center center / cover no-repeat rgb(51, 51, 51); position: relative; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; padding: 20px;">
-          <div data-dc-tpl="66" style="position: absolute; inset: 0px; background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.66));"></div>
-          <div data-dc-tpl="67" style="position: relative; display: flex; flex-direction: column; gap: 4px;">
-            <h3 data-dc-tpl="68" style="margin: 0px; font-family: &quot;Fira Sans&quot;, sans-serif; font-weight: 400; font-size: 18px; text-transform: capitalize; color: rgb(255, 255, 255);"><span class="sc-interp">química</span></h3>
-            <a data-dc-tpl="69" href="#unidades" style="font-family: &quot;Fira Sans&quot;, sans-serif; font-weight: 500; font-size: 12px; color: #C7A662;">Agendar →</a>
-          </div>
-        </div>
-      
-        <div data-dc-tpl="65" class="svc-card reveal" style="width: calc(33.33% - 11px); min-height: 150px; background: url(&quot;images/servico-tatuagem.jpg&quot;) center center / cover no-repeat rgb(51, 51, 51); position: relative; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; padding: 20px;">
-          <div data-dc-tpl="66" style="position: absolute; inset: 0px; background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.66));"></div>
-          <div data-dc-tpl="67" style="position: relative; display: flex; flex-direction: column; gap: 4px;">
-            <h3 data-dc-tpl="68" style="margin: 0px; font-family: &quot;Fira Sans&quot;, sans-serif; font-weight: 400; font-size: 18px; text-transform: capitalize; color: rgb(255, 255, 255);"><span class="sc-interp">tatuagem</span></h3>
-            <a data-dc-tpl="69" href="#unidades" style="font-family: &quot;Fira Sans&quot;, sans-serif; font-weight: 500; font-size: 12px; color: #C7A662;">Agendar →</a>
-          </div>
-        </div>
-      
-        <div data-dc-tpl="65" class="svc-card reveal" style="width: calc(33.33% - 11px); min-height: 150px; background: url(&quot;images/servico-depilacao-masculina.jpg&quot;) center center / cover no-repeat rgb(51, 51, 51); position: relative; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; padding: 20px;">
-          <div data-dc-tpl="66" style="position: absolute; inset: 0px; background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.66));"></div>
-          <div data-dc-tpl="67" style="position: relative; display: flex; flex-direction: column; gap: 4px;">
-            <h3 data-dc-tpl="68" style="margin: 0px; font-family: &quot;Fira Sans&quot;, sans-serif; font-weight: 400; font-size: 18px; text-transform: capitalize; color: rgb(255, 255, 255);"><span class="sc-interp">depilação masculina</span></h3>
-            <a data-dc-tpl="69" href="#unidades" style="font-family: &quot;Fira Sans&quot;, sans-serif; font-weight: 500; font-size: 12px; color: #C7A662;">Agendar →</a>
-          </div>
-        </div>
-      
-        <div data-dc-tpl="65" class="svc-card reveal" style="width: calc(33.33% - 11px); min-height: 150px; background: url(&quot;images/servico-day-spa.jpg&quot;) center center / cover no-repeat rgb(51, 51, 51); position: relative; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; padding: 20px;">
-          <div data-dc-tpl="66" style="position: absolute; inset: 0px; background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.66));"></div>
-          <div data-dc-tpl="67" style="position: relative; display: flex; flex-direction: column; gap: 4px;">
-            <h3 data-dc-tpl="68" style="margin: 0px; font-family: &quot;Fira Sans&quot;, sans-serif; font-weight: 400; font-size: 18px; text-transform: capitalize; color: rgb(255, 255, 255);"><span class="sc-interp">day spa</span></h3>
-            <a data-dc-tpl="69" href="#unidades" style="font-family: &quot;Fira Sans&quot;, sans-serif; font-weight: 500; font-size: 12px; color: #C7A662;">Agendar →</a>
-          </div>
-        </div>
-      
-    </div>
-  </div>
-
-  
-  <div data-dc-tpl="70" id="unidades" style="padding: 90px 120px; background: rgb(255, 255, 255);">
-    <div data-dc-tpl="71" class="reveal" style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 40px;">
-      <h2 data-dc-tpl="72" style="margin: 0px; font-family: &quot;Cinzel Decorative&quot;, serif; font-weight: 500; font-size: 42px; color: rgb(29, 29, 29);">nossas unidades</h2>
-      <p data-dc-tpl="73" style="margin: 0px; font-family: &quot;Fira Sans&quot;, sans-serif; font-weight: 300; font-size: 18px; text-transform: uppercase; color: rgb(99, 99, 99);">Escolha a mais perto de você</p>
-    </div>
-    <div data-dc-tpl="74" style="display: flex; gap: 24px;">
-      
-        <div data-dc-tpl="76" class="unit-card reveal" style="flex: 1 1 0%; border: 1px solid rgb(236, 236, 236); border-radius: 16px; overflow: hidden; display: flex; flex-direction: column;">
-          <div data-dc-tpl="77" style="height: 150px; background: rgb(231, 228, 222); display: flex; align-items: center; justify-content: center; font-family: &quot;Fira Sans&quot;, sans-serif; font-size: 12px; color: rgb(154, 154, 154); letter-spacing: 0.12em;">MAPA — <span class="sc-interp">barueri</span></div>
-          <div data-dc-tpl="78" style="padding: 28px; display: flex; flex-direction: column; gap: 12px;">
-            <h3 data-dc-tpl="79" style="margin: 0px; font-family: &quot;Cinzel Decorative&quot;, serif; font-weight: 500; font-size: 24px; color: rgb(29, 29, 29); text-transform: capitalize;"><span class="sc-interp">barueri</span></h3>
-            <div data-dc-tpl="80" style="display: flex; align-items: center; gap: 8px; font-family: &quot;Fira Sans&quot;, sans-serif; font-size: 14px; color: rgb(99, 99, 99);">
-              <svg data-dc-tpl="81" viewBox="0 0 24 24" width="15" height="15" fill="#C7A662"><path data-dc-tpl="82" d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"></path></svg>
-              <span class="sc-interp">Barueri, SP</span>
-            </div>
-            <div data-dc-tpl="83" style="display: flex; align-items: center; gap: 8px; font-family: &quot;Fira Sans&quot;, sans-serif; font-size: 14px; color: rgb(99, 99, 99);">
-              <svg data-dc-tpl="84" viewBox="0 0 24 24" width="15" height="15" fill="#C7A662"><path data-dc-tpl="85" d="M6.6 10.8a15.9 15.9 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"></path></svg>
-              <span class="sc-interp">(11) 97802-5929</span>
-            </div>
-            <div data-dc-tpl="86" style="display: flex; align-items: flex-start; gap: 8px; font-family: &quot;Fira Sans&quot;, sans-serif; font-size: 13px; color: rgb(138, 138, 138);">
-              <svg data-dc-tpl="87" viewBox="0 0 24 24" width="15" height="15" fill="#C7A662" style="flex: 0 0 auto; margin-top: 1px;"><path data-dc-tpl="88" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 10.4-3.3 1.9-.8-1.3 2.6-1.5V6h1.5v6.4z"></path></svg>
-              <span class="sc-interp">Seg a Sáb · 9h às 20h — Feriado · 9h às 13h</span>
-            </div>
-            <div data-dc-tpl="89" style="display: flex; flex-direction: column; gap: 10px; margin-top: 8px;">
-              <a data-dc-tpl="90" class="btn-cta" href="https://www.trinks.com/estudio-satisfacao-barueri-/framebusca" target="_blank" rel="noopener" style="display: flex; align-items: center; justify-content: center; gap: 7px; padding: 15px 22px; background: rgb(29, 29, 29); color: rgb(255, 255, 255); border-radius: 40px; font: 600 13px &quot;Fira Sans&quot;, sans-serif;">Agendar online →</a>
-              <div data-dc-tpl="91" style="display: flex; gap: 10px;">
-                <a data-dc-tpl="92" class="btn-whatsapp" href="https://wa.me/5511978025929?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20unidade%20Barueri." target="_blank" rel="noopener" style="flex: 1 1 0%; display: flex; align-items: center; justify-content: center; gap: 7px; padding: 13px 18px; background: rgb(62, 207, 110); color: rgb(11, 61, 31); border-radius: 40px; font: 600 12px &quot;Fira Sans&quot;, sans-serif;">
-                  <svg data-dc-tpl="93" viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path data-dc-tpl="94" d="M17.5 14.4c-.3-.15-1.7-.84-2-.93-.26-.1-.46-.15-.65.14-.2.3-.75.94-.92 1.13-.17.2-.34.22-.63.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.45.13-.6.13-.13.3-.34.44-.5.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.65-1.56-.9-2.14-.23-.56-.47-.48-.65-.49h-.55c-.2 0-.5.07-.77.36-.26.3-1 .98-1 2.4 0 1.4 1.03 2.76 1.17 2.95.15.2 2.02 3.08 4.9 4.32.68.3 1.22.47 1.63.6.69.22 1.31.19 1.8.11.55-.08 1.7-.69 1.93-1.36.24-.67.24-1.24.17-1.36-.07-.12-.26-.19-.55-.34z"></path></svg>
-                  WhatsApp
-                </a>
-                <a data-dc-tpl="95" class="btn-outline" href="https://www.google.com/maps/search/Est%C3%BAdio+Satisfa%C3%A7%C3%A3o+Barueri" target="_blank" rel="noopener" style="flex: 1 1 0%; text-align: center; padding: 13px 18px; background: rgb(255, 255, 255); color: rgb(29, 29, 29); border: 1px solid rgb(29, 29, 29); border-radius: 40px; font: 500 12px &quot;Fira Sans&quot;, sans-serif;">Como chegar</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      
-        <div data-dc-tpl="76" class="unit-card reveal" style="flex: 1 1 0%; border: 1px solid rgb(236, 236, 236); border-radius: 16px; overflow: hidden; display: flex; flex-direction: column;">
-          <div data-dc-tpl="77" style="height: 150px; background: rgb(231, 228, 222); display: flex; align-items: center; justify-content: center; font-family: &quot;Fira Sans&quot;, sans-serif; font-size: 12px; color: rgb(154, 154, 154); letter-spacing: 0.12em;">MAPA — <span class="sc-interp">carapicuíba</span></div>
-          <div data-dc-tpl="78" style="padding: 28px; display: flex; flex-direction: column; gap: 12px;">
-            <h3 data-dc-tpl="79" style="margin: 0px; font-family: &quot;Cinzel Decorative&quot;, serif; font-weight: 500; font-size: 24px; color: rgb(29, 29, 29); text-transform: capitalize;"><span class="sc-interp">carapicuíba</span></h3>
-            <div data-dc-tpl="80" style="display: flex; align-items: center; gap: 8px; font-family: &quot;Fira Sans&quot;, sans-serif; font-size: 14px; color: rgb(99, 99, 99);">
-              <svg data-dc-tpl="81" viewBox="0 0 24 24" width="15" height="15" fill="#C7A662"><path data-dc-tpl="82" d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"></path></svg>
-              <span class="sc-interp">Carapicuíba, SP</span>
-            </div>
-            <div data-dc-tpl="83" style="display: flex; align-items: center; gap: 8px; font-family: &quot;Fira Sans&quot;, sans-serif; font-size: 14px; color: rgb(99, 99, 99);">
-              <svg data-dc-tpl="84" viewBox="0 0 24 24" width="15" height="15" fill="#C7A662"><path data-dc-tpl="85" d="M6.6 10.8a15.9 15.9 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"></path></svg>
-              <span class="sc-interp">(11) 4374-1558</span>
-            </div>
-            <div data-dc-tpl="86" style="display: flex; align-items: flex-start; gap: 8px; font-family: &quot;Fira Sans&quot;, sans-serif; font-size: 13px; color: rgb(138, 138, 138);">
-              <svg data-dc-tpl="87" viewBox="0 0 24 24" width="15" height="15" fill="#C7A662" style="flex: 0 0 auto; margin-top: 1px;"><path data-dc-tpl="88" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 10.4-3.3 1.9-.8-1.3 2.6-1.5V6h1.5v6.4z"></path></svg>
-              <span class="sc-interp">Seg a Sáb · 9h às 20h — Feriado · 9h às 13h</span>
-            </div>
-            <div data-dc-tpl="89" style="display: flex; flex-direction: column; gap: 10px; margin-top: 8px;">
-              <a data-dc-tpl="90" class="btn-cta" href="https://www.trinks.com/estudiosatisfacao/framebusca" target="_blank" rel="noopener" style="display: flex; align-items: center; justify-content: center; gap: 7px; padding: 15px 22px; background: rgb(29, 29, 29); color: rgb(255, 255, 255); border-radius: 40px; font: 600 13px &quot;Fira Sans&quot;, sans-serif;">Agendar online →</a>
-              <div data-dc-tpl="91" style="display: flex; gap: 10px;">
-                <a data-dc-tpl="92" class="btn-whatsapp" href="https://wa.me/551143741558?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20unidade%20Carapicu%C3%ADba." target="_blank" rel="noopener" style="flex: 1 1 0%; display: flex; align-items: center; justify-content: center; gap: 7px; padding: 13px 18px; background: rgb(62, 207, 110); color: rgb(11, 61, 31); border-radius: 40px; font: 600 12px &quot;Fira Sans&quot;, sans-serif;">
-                  <svg data-dc-tpl="93" viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path data-dc-tpl="94" d="M17.5 14.4c-.3-.15-1.7-.84-2-.93-.26-.1-.46-.15-.65.14-.2.3-.75.94-.92 1.13-.17.2-.34.22-.63.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.45.13-.6.13-.13.3-.34.44-.5.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.65-1.56-.9-2.14-.23-.56-.47-.48-.65-.49h-.55c-.2 0-.5.07-.77.36-.26.3-1 .98-1 2.4 0 1.4 1.03 2.76 1.17 2.95.15.2 2.02 3.08 4.9 4.32.68.3 1.22.47 1.63.6.69.22 1.31.19 1.8.11.55-.08 1.7-.69 1.93-1.36.24-.67.24-1.24.17-1.36-.07-.12-.26-.19-.55-.34z"></path></svg>
-                  WhatsApp
-                </a>
-                <a data-dc-tpl="95" class="btn-outline" href="https://www.google.com/maps/search/Est%C3%BAdio+Satisfa%C3%A7%C3%A3o+Carapicu%C3%ADba" target="_blank" rel="noopener" style="flex: 1 1 0%; text-align: center; padding: 13px 18px; background: rgb(255, 255, 255); color: rgb(29, 29, 29); border: 1px solid rgb(29, 29, 29); border-radius: 40px; font: 500 12px &quot;Fira Sans&quot;, sans-serif;">Como chegar</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      
-    </div>
-  </div>
-
-  
-  <div data-dc-tpl="96" style="background: rgb(13, 13, 13); padding: 56px 120px 40px; display: flex; justify-content: space-between; gap: 40px; flex-wrap: wrap;">
-    <div data-dc-tpl="97" style="display: flex; flex-direction: column; gap: 14px; max-width: 280px;">
-      <img data-dc-tpl="98" src="images/logo-satisfacao.webp" alt="Estúdio Satisfação" style="width: 120px;">
-      <p data-dc-tpl="99" style="margin: 0px; font-family: &quot;Fira Sans&quot;, sans-serif; font-size: 13px; line-height: 20px; color: rgb(138, 138, 138);">Barbearia focada na experiência e na qualidade do corte. SPA masculino em Barueri e Carapicuíba.</p>
-    </div>
-    <div data-dc-tpl="100" style="display: flex; flex-direction: column; gap: 12px;">
-      <span data-dc-tpl="101" style="font: 500 12px &quot;Fira Sans&quot;, sans-serif; color: rgb(255, 255, 255); letter-spacing: 0.08em;">UNIDADES</span>
-      
-        <a data-dc-tpl="103" href="https://wa.me/5511978025929?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20unidade%20Barueri." style="font: 400 13px &quot;Fira Sans&quot;, sans-serif; color: rgb(182, 182, 182); text-transform: capitalize;"><span class="sc-interp">barueri</span> · <span class="sc-interp">(11) 97802-5929</span></a>
-      
-        <a data-dc-tpl="103" href="https://wa.me/551143741558?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20unidade%20Carapicu%C3%ADba." style="font: 400 13px &quot;Fira Sans&quot;, sans-serif; color: rgb(182, 182, 182); text-transform: capitalize;"><span class="sc-interp">carapicuíba</span> · <span class="sc-interp">(11) 4374-1558</span></a>
-      
-    </div>
-    <div data-dc-tpl="104" style="display: flex; flex-direction: column; gap: 12px;">
-      <span data-dc-tpl="105" style="font: 500 12px &quot;Fira Sans&quot;, sans-serif; color: rgb(255, 255, 255); letter-spacing: 0.08em;">HORÁRIO</span>
-      <span data-dc-tpl="106" style="font: 400 13px &quot;Fira Sans&quot;, sans-serif; color: rgb(182, 182, 182);">Seg a Sáb · 9h às 20h</span>
-      <span data-dc-tpl="107" style="font: 400 13px &quot;Fira Sans&quot;, sans-serif; color: rgb(182, 182, 182);">Feriado · 9h às 13h</span>
-    </div>
-    <div data-dc-tpl="108" style="display: flex; flex-direction: column; gap: 12px;">
-      <span data-dc-tpl="109" style="font: 500 12px &quot;Fira Sans&quot;, sans-serif; color: rgb(255, 255, 255); letter-spacing: 0.08em;">REDES</span>
-      <a data-dc-tpl="110" href="https://www.instagram.com/estudiosatisfacao" target="_blank" rel="noopener" style="font: 400 13px &quot;Fira Sans&quot;, sans-serif; color: rgb(182, 182, 182);">Instagram</a>
-      <a data-dc-tpl="111" href="https://wa.me/5511978025929?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20unidade%20Barueri." style="font: 400 13px &quot;Fira Sans&quot;, sans-serif; color: rgb(182, 182, 182);">WhatsApp</a>
-    </div>
-  </div>
-
-  
-  <div data-dc-tpl="112" style="position: sticky; bottom: 0px; left: 0px; right: 0px; background: rgb(29, 29, 29); padding: 18px 60px; display: flex; align-items: center; justify-content: space-between; box-shadow: rgba(0, 0, 0, 0.22) 0px -8px 24px; z-index: 6;">
-    <span data-dc-tpl="113" style="font-family: &quot;Fira Sans&quot;, sans-serif; font-size: 14px; color: rgb(255, 255, 255);">4,9 ★ · 168 avaliações — pronto para agendar?</span>
-    <a data-dc-tpl="114" href="#unidades" class="btn-cta" style="padding: 14px 32px; background: rgb(62, 207, 110); color: rgb(11, 61, 31); border-radius: 40px; font: 600 13px &quot;Fira Sans&quot;, sans-serif;">ESCOLHER UNIDADE</a>
-  </div></div></div></div>
+</div>
 <script src="script.js" defer></script>
-
-
-</body></html>
+</body>
+</html>

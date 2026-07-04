@@ -1,185 +1,151 @@
 <!DOCTYPE html>
-<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Serviços — Estúdio Satisfação</title><link rel="stylesheet" href="styles.css">
-<style id="page-overrides">
-  .page-header { position: relative; min-height: 320px; background: url("images/foto-interior-barbearia.webp") center 30% / cover no-repeat #000; display: flex; flex-direction: column; }
-  .page-header::before { content: ''; position: absolute; inset: 0; background: linear-gradient(rgba(0,0,0,0.62), rgba(0,0,0,0.72)); }
-  .page-header > * { position: relative; }
-  .page-header-title { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 48px 60px; gap: 10px; }
-  .page-header-title h1 { margin: 0; font-family: 'Cinzel Decorative', serif; font-weight: 500; font-size: 42px; color: #fff; }
-  .page-header-title p { margin: 0; font-family: 'Fira Sans', sans-serif; font-weight: 300; font-size: 16px; text-transform: uppercase; letter-spacing: .04em; color: #d5d5d5; }
-  .breadcrumb { font-family: 'Fira Sans', sans-serif; font-size: 13px; color: #b6b6b6; }
-  .breadcrumb a { color: #b6b6b6; }
-  .breadcrumb a:hover { color: #C7A662; }
-
-  .service-row { display: flex; gap: 56px; padding: 84px 120px; align-items: center; }
-  .service-row.alt { flex-direction: row-reverse; background: #FAF9F6; }
-  .service-row .service-photo { width: 46%; border-radius: 16px; overflow: hidden; }
-  .service-row .service-photo img { width: 100%; height: 420px; object-fit: cover; display: block; }
-  .service-row .service-text { width: 54%; display: flex; flex-direction: column; gap: 16px; }
-  .service-row .service-text .eyebrow { font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 13px; letter-spacing: .1em; text-transform: uppercase; color: #C7A662; }
-  .service-row .service-text h2 { margin: 0; font-family: 'Cinzel Decorative', serif; font-weight: 500; font-size: 34px; color: #1D1D1D; }
-  .service-row .service-text p.desc { margin: 0; max-width: 520px; font-family: 'Fira Sans', sans-serif; font-size: 16px; line-height: 26px; color: #636363; }
-  .service-meta { display: flex; gap: 32px; margin-top: 4px; }
-  .service-meta div { display: flex; flex-direction: column; gap: 2px; }
-  .service-meta span.label { font-family: 'Fira Sans', sans-serif; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: #9a9a9a; }
-  .service-meta span.value { font-family: 'Fira Sans', sans-serif; font-weight: 600; font-size: 14px; color: #1D1D1D; }
-  .service-row .service-actions { display: flex; gap: 14px; margin-top: 10px; }
-
-  @media (max-width: 860px) {
-    .site-nav { padding: 14px 20px !important; height: auto !important; flex-wrap: wrap; gap: 12px; }
-    .nav-links { gap: 16px !important; flex-wrap: wrap; justify-content: flex-end; }
-    .nav-logo { width: 110px !important; }
-    .page-header-title { padding: 32px 20px; }
-    .page-header-title h1 { font-size: 30px; }
-    .service-row, .service-row.alt { flex-direction: column; padding: 48px 20px; }
-    .service-row .service-photo, .service-row .service-text { width: 100%; }
-    .service-row .service-photo img { height: 280px; }
-    .service-meta { flex-wrap: wrap; gap: 20px; }
-  }
-</style>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Serviços — Estúdio Satisfação</title>
+<meta name="description" content="O menu do Estúdio Satisfação: cabelo, barba e bigode, sobrancelha, química, tatuagem, depilação masculina e day spa.">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div style="width: 100%; max-width: 1440px; background: #fff; font-family: 'Fira Sans', sans-serif; position: relative;">
+<div class="page">
 
-  <div class="page-header">
-    <div class="site-nav" style="position: relative; display: flex; align-items: center; justify-content: space-between; padding: 0px 60px; height: 100px; border-bottom: 1px solid rgba(255,255,255,0.22); transition: background 0.3s ease, box-shadow 0.3s ease;">
-      <a href="index.html"><img src="images/logo-satisfacao.webp" alt="Estúdio Satisfação — barbearia" class="nav-logo" style="width: 140px; height: auto; display: block;"></a>
-      <div class="nav-links" style="display: flex; align-items: center; gap: 34px;">
-        <a href="servicos.html" class="nav-link" style="color: #C7A662; font: 400 14px 'Fira Sans', sans-serif;">Serviços</a>
-        <a href="index.html#avaliacoes" class="nav-link" style="color: #fff; font: 400 14px 'Fira Sans', sans-serif;">Avaliações</a>
-        <a href="index.html#unidades" class="nav-link" style="color: #fff; font: 400 14px 'Fira Sans', sans-serif;">Unidades</a>
-        <a href="index.html#unidades" class="btn-cta" style="padding: 15px 32px; background: #fff; color: #000; border-radius: 48px; font: 600 13px 'Fira Sans', sans-serif;">AGENDAR</a>
-      </div>
+  <!-- Nav -->
+  <nav class="site-nav nav-scrolled" aria-label="Principal">
+    <a href="index.html" aria-label="Estúdio Satisfação — início">
+      <img class="nav-logo" src="images/logo-satisfacao.webp" alt="Estúdio Satisfação">
+    </a>
+    <div class="nav-links">
+      <a class="nav-link" href="servicos.html" aria-current="page">Serviços</a>
+      <a class="nav-link" href="index.html#avaliacoes">Avaliações</a>
+      <a class="nav-link" href="index.html#unidades">Unidades</a>
+      <a class="btn btn-gold btn-sm" href="index.html#unidades">Agendar</a>
     </div>
-    <div class="page-header-title reveal">
-      <div class="breadcrumb"><a href="index.html">Home</a> / Serviços</div>
-      <h1>Nossos Serviços</h1>
-      <p>Cuidado completo, do corte ao relaxamento</p>
-    </div>
-  </div>
+  </nav>
 
-  <div class="service-row reveal">
-    <div class="service-photo"><img src="images/servico-cabelo-barba-bigode.jpg" alt="Corte de cabelo, barba e bigode"></div>
+  <!-- Cabeçalho -->
+  <header class="page-header">
+    <p class="breadcrumb"><a href="index.html">Início</a> / Serviços</p>
+    <span class="eyebrow">O menu do estúdio</span>
+    <h1 class="section-title on-dark" style="font-family: var(--f-flourish); font-weight: 400; margin-top: 12px;">Nossos Serviços</h1>
+    <p class="section-sub" style="color: var(--on-dk-mut); margin-top: 8px;">Cuidado completo, do corte ao relaxamento</p>
+  </header>
+
+  <!-- Detalhes -->
+  <section class="service-row reveal" id="cabelo-barba-bigode">
+    <div class="service-photo"><img src="images/estudio-barba.webp" alt="Corte de cabelo, barba e bigode"></div>
     <div class="service-text">
-      <span class="eyebrow">Corte &amp; Barba</span>
+      <span class="num-tag">01 · Corte &amp; Barba</span>
       <h2>Cabelo, Barba e Bigode</h2>
       <p class="desc">Corte moderno ou clássico, alinhado à barba e ao bigode, com acabamento à navalha. Um visual completo, pensado para o seu estilo e para o formato do seu rosto.</p>
       <div class="service-meta">
         <div><span class="label">Duração</span><span class="value">Consulte disponibilidade</span></div>
         <div><span class="label">Valor</span><span class="value">Sob consulta</span></div>
       </div>
-      <div class="service-actions">
-        <a href="index.html#unidades" class="btn-cta" style="padding: 14px 28px; background: #1D1D1D; color: #fff; border-radius: 40px; font: 600 13px 'Fira Sans', sans-serif;">Agendar →</a>
-      </div>
+      <div class="service-actions"><a class="btn btn-dark" href="index.html#unidades">Agendar →</a></div>
     </div>
-  </div>
+  </section>
 
-  <div class="service-row alt reveal">
+  <section class="service-row alt reveal" id="sobrancelha">
     <div class="service-photo"><img src="images/servico-sobrancelha.jpg" alt="Design de sobrancelha"></div>
     <div class="service-text">
-      <span class="eyebrow">Grooming</span>
+      <span class="num-tag">02 · Grooming</span>
       <h2>Sobrancelha</h2>
       <p class="desc">Design de sobrancelha na navalha ou pinça, para um olhar mais expressivo e contornos bem definidos no rosto — um detalhe pequeno que muda todo o acabamento.</p>
       <div class="service-meta">
         <div><span class="label">Duração</span><span class="value">Consulte disponibilidade</span></div>
         <div><span class="label">Valor</span><span class="value">Sob consulta</span></div>
       </div>
-      <div class="service-actions">
-        <a href="index.html#unidades" class="btn-cta" style="padding: 14px 28px; background: #1D1D1D; color: #fff; border-radius: 40px; font: 600 13px 'Fira Sans', sans-serif;">Agendar →</a>
-      </div>
+      <div class="service-actions"><a class="btn btn-dark" href="index.html#unidades">Agendar →</a></div>
     </div>
-  </div>
+  </section>
 
-  <div class="service-row reveal">
+  <section class="service-row reveal" id="quimica">
     <div class="service-photo"><img src="images/servico-quimica.jpg" alt="Tratamento químico capilar"></div>
     <div class="service-text">
-      <span class="eyebrow">Tratamento capilar</span>
+      <span class="num-tag">03 · Tratamento capilar</span>
       <h2>Química</h2>
       <p class="desc">Coloração, relaxamento e produtos de estilização aplicados por profissionais experientes, para dar personalidade e saúde ao seu cabelo sem abrir mão do cuidado.</p>
       <div class="service-meta">
         <div><span class="label">Duração</span><span class="value">Consulte disponibilidade</span></div>
         <div><span class="label">Valor</span><span class="value">Sob consulta</span></div>
       </div>
-      <div class="service-actions">
-        <a href="index.html#unidades" class="btn-cta" style="padding: 14px 28px; background: #1D1D1D; color: #fff; border-radius: 40px; font: 600 13px 'Fira Sans', sans-serif;">Agendar →</a>
-      </div>
+      <div class="service-actions"><a class="btn btn-dark" href="index.html#unidades">Agendar →</a></div>
     </div>
-  </div>
+  </section>
 
-  <div class="service-row alt reveal">
+  <section class="service-row alt reveal" id="tatuagem">
     <div class="service-photo"><img src="images/servico-tatuagem.jpg" alt="Tatuagem"></div>
     <div class="service-text">
-      <span class="eyebrow">Arte corporal</span>
+      <span class="num-tag">04 · Arte corporal</span>
       <h2>Tatuagem</h2>
       <p class="desc">Estúdio parceiro para tatuagens autorais ou personalizadas, com profissionais experientes, materiais de qualidade e todo o cuidado com a biossegurança.</p>
       <div class="service-meta">
         <div><span class="label">Duração</span><span class="value">Consulte disponibilidade</span></div>
         <div><span class="label">Valor</span><span class="value">Sob consulta</span></div>
       </div>
-      <div class="service-actions">
-        <a href="index.html#unidades" class="btn-cta" style="padding: 14px 28px; background: #1D1D1D; color: #fff; border-radius: 40px; font: 600 13px 'Fira Sans', sans-serif;">Agendar →</a>
-      </div>
+      <div class="service-actions"><a class="btn btn-dark" href="index.html#unidades">Agendar →</a></div>
     </div>
-  </div>
+  </section>
 
-  <div class="service-row reveal">
+  <section class="service-row reveal" id="depilacao-masculina">
     <div class="service-photo"><img src="images/servico-depilacao-masculina.jpg" alt="Depilação masculina"></div>
     <div class="service-text">
-      <span class="eyebrow">Acabamento</span>
+      <span class="num-tag">05 · Acabamento</span>
       <h2>Depilação Masculina</h2>
       <p class="desc">Cera ou navalha para nariz, orelha e sobrancelha — detalhes que parecem pequenos, mas fazem toda a diferença no acabamento final do seu visual.</p>
       <div class="service-meta">
         <div><span class="label">Duração</span><span class="value">Consulte disponibilidade</span></div>
         <div><span class="label">Valor</span><span class="value">Sob consulta</span></div>
       </div>
-      <div class="service-actions">
-        <a href="index.html#unidades" class="btn-cta" style="padding: 14px 28px; background: #1D1D1D; color: #fff; border-radius: 40px; font: 600 13px 'Fira Sans', sans-serif;">Agendar →</a>
-      </div>
+      <div class="service-actions"><a class="btn btn-dark" href="index.html#unidades">Agendar →</a></div>
     </div>
-  </div>
+  </section>
 
-  <div class="service-row alt reveal">
+  <section class="service-row alt reveal" id="day-spa">
     <div class="service-photo"><img src="images/servico-day-spa.jpg" alt="Day spa masculino"></div>
     <div class="service-text">
-      <span class="eyebrow">Relaxamento</span>
+      <span class="num-tag">06 · Relaxamento</span>
       <h2>Day Spa</h2>
       <p class="desc">Toalha quente, hidratação facial e um momento de relaxamento completo — porque cuidar de si também é uma experiência, não só uma tarefa.</p>
       <div class="service-meta">
         <div><span class="label">Duração</span><span class="value">Consulte disponibilidade</span></div>
         <div><span class="label">Valor</span><span class="value">Sob consulta</span></div>
       </div>
-      <div class="service-actions">
-        <a href="index.html#unidades" class="btn-cta" style="padding: 14px 28px; background: #1D1D1D; color: #fff; border-radius: 40px; font: 600 13px 'Fira Sans', sans-serif;">Agendar →</a>
-      </div>
+      <div class="service-actions"><a class="btn btn-dark" href="index.html#unidades">Agendar →</a></div>
     </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <img src="images/logo-satisfacao.webp" alt="Estúdio Satisfação">
+      <p>Barbearia focada na experiência e na qualidade do corte. SPA masculino em Barueri e Carapicuíba.</p>
+    </div>
+    <div class="footer-col">
+      <span class="head">Unidades</span>
+      <a href="https://wa.me/5511978025929?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20unidade%20Barueri.">Barueri · (11) 97802-5929</a>
+      <a href="https://wa.me/551143741558?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20unidade%20Carapicu%C3%ADba.">Carapicuíba · (11) 4374-1558</a>
+    </div>
+    <div class="footer-col">
+      <span class="head">Horário</span>
+      <span>Seg a Sáb · 9h às 20h</span>
+      <span>Feriado · 9h às 13h</span>
+    </div>
+    <div class="footer-col">
+      <span class="head">Redes</span>
+      <a href="https://www.instagram.com/estudiosatisfacao" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://wa.me/5511978025929?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20unidade%20Barueri.">WhatsApp</a>
+    </div>
+  </footer>
+
+  <!-- Barra CTA sticky -->
+  <div class="cta-bar">
+    <span><b>4,9 ★</b> · 168 avaliações — pronto para agendar?</span>
+    <a class="btn btn-gold btn-sm" href="index.html#unidades">Escolher unidade →</a>
   </div>
 
-  <div style="background: #0D0D0D; padding: 56px 120px 40px; display: flex; justify-content: space-between; gap: 40px; flex-wrap: wrap;">
-    <div style="display: flex; flex-direction: column; gap: 14px; max-width: 280px;">
-      <img src="images/logo-satisfacao.webp" alt="Estúdio Satisfação" style="width: 120px;">
-      <p style="margin: 0px; font-family: 'Fira Sans', sans-serif; font-size: 13px; line-height: 20px; color: #8a8a8a;">Barbearia focada na experiência e na qualidade do corte. SPA masculino em Barueri e Carapicuíba.</p>
-    </div>
-    <div style="display: flex; flex-direction: column; gap: 12px;">
-      <span style="font: 500 12px 'Fira Sans', sans-serif; color: #fff; letter-spacing: 0.08em;">UNIDADES</span>
-      <a href="https://wa.me/5511978025929?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20unidade%20Barueri." style="font: 400 13px 'Fira Sans', sans-serif; color: #b6b6b6; text-transform: capitalize;">barueri · (11) 97802-5929</a>
-      <a href="https://wa.me/551143741558?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20unidade%20Carapicu%C3%ADba." style="font: 400 13px 'Fira Sans', sans-serif; color: #b6b6b6; text-transform: capitalize;">carapicuíba · (11) 4374-1558</a>
-    </div>
-    <div style="display: flex; flex-direction: column; gap: 12px;">
-      <span style="font: 500 12px 'Fira Sans', sans-serif; color: #fff; letter-spacing: 0.08em;">HORÁRIO</span>
-      <span style="font: 400 13px 'Fira Sans', sans-serif; color: #b6b6b6;">Seg a Sáb · 9h às 20h</span>
-      <span style="font: 400 13px 'Fira Sans', sans-serif; color: #b6b6b6;">Feriado · 9h às 13h</span>
-    </div>
-    <div style="display: flex; flex-direction: column; gap: 12px;">
-      <span style="font: 500 12px 'Fira Sans', sans-serif; color: #fff; letter-spacing: 0.08em;">REDES</span>
-      <a href="https://www.instagram.com/estudiosatisfacao" target="_blank" rel="noopener" style="font: 400 13px 'Fira Sans', sans-serif; color: #b6b6b6;">Instagram</a>
-      <a href="https://wa.me/5511978025929?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20unidade%20Barueri." style="font: 400 13px 'Fira Sans', sans-serif; color: #b6b6b6;">WhatsApp</a>
-    </div>
-  </div>
-
-  <div style="position: sticky; bottom: 0px; left: 0px; right: 0px; background: #1D1D1D; padding: 18px 60px; display: flex; align-items: center; justify-content: space-between; box-shadow: rgba(0, 0, 0, 0.22) 0px -8px 24px; z-index: 6;">
-    <span style="font-family: 'Fira Sans', sans-serif; font-size: 14px; color: #fff;">4,9 ★ · 168 avaliações — pronto para agendar?</span>
-    <a href="index.html#unidades" class="btn-cta" style="padding: 14px 32px; background: #3ECF6E; color: #0B3D1F; border-radius: 40px; font: 600 13px 'Fira Sans', sans-serif;">ESCOLHER UNIDADE</a>
-  </div>
 </div>
 <script src="script.js" defer></script>
-</body></html>
+</body>
+</html>
