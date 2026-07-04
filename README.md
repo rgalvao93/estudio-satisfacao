@@ -34,6 +34,10 @@ Basta substituir o arquivo correspondente em `images/` (mantendo o mesmo nome) o
 atributo `src`/`background-image` no `index.html` apontando para uma nova imagem (local ou uma
 URL de banco de imagens público, ex. Unsplash/Pexels).
 
+As 6 fotos de `images/servico-*.jpg` (cards de "Nossos Serviços") vêm do banco gratuito
+[Pexels](https://www.pexels.com) (licença Pexels: uso comercial livre, atribuição não
+obrigatória). São placeholders — trocar por fotos reais do estúdio quando disponíveis.
+
 ## Rodando localmente
 
 ```bash
