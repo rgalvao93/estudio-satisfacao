@@ -18,9 +18,12 @@ WordPress (ou migrar para outra stack), usando este protótipo como referência 
 
 ## Estrutura
 
-- `index.html` — versão **redesenhada**, em HTML/CSS puro e editável. Publicada como prévia.
-- `images/` — fotos e ícones usados por `index.html` (nomes descritivos, fáceis de trocar).
-- `fonts/` — arquivos de fonte (`.woff2`) usados por `index.html`.
+- `index.html` — página inicial (hero, avaliações, experiência, prévia de serviços, unidades).
+- `servicos.html` — página dedicada de serviços, com descrição, duração/valor (placeholder) e foto de cada um dos 6 serviços.
+- `styles.css` — CSS compartilhado entre as páginas (fontes, reset, animações de entrada ao rolar, efeitos de hover).
+- `script.js` — anima seções ao entrar na tela (IntersectionObserver) e adiciona sombra no menu ao rolar.
+- `images/` — fotos e ícones usados pelas páginas (nomes descritivos, fáceis de trocar).
+- `fonts/` — arquivos de fonte (`.woff2`) usados pelas páginas.
 - `Estudio Satisfacao Site Final (offline).html` — arquivo original exportado do Claude Designer
   (formato "bundle": imagens e fontes codificadas em base64, desempacotadas via JS no navegador).
   Mantido só como referência — **não é o arquivo a editar**, pois não é hand-editável.
